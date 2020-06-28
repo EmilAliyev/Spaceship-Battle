@@ -2,7 +2,7 @@
  * game.c
  *
  *  Created on: Mar 9, 2019
- *      Author: EmilAliyev
+ *      Authors: Emil Aliyev, Andrew Lu
  */
 
 //Header include
@@ -102,7 +102,7 @@ static void titleScreen()
     titleScreenMessage(TITLE);
 }
 
-//Called at start of game
+//Start the game
 void game_start()
 {
 
@@ -138,6 +138,7 @@ void game_loop()
 //Called at end of game
 void game_end(int result)
 {
+	//Display appropriate screen depending on victory or defeat.
     if(result == DEFEAT)
         loseScreen();
 

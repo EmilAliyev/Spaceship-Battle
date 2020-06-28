@@ -2,7 +2,7 @@
  * ball.c
  *
  *  Created on: Mar 9, 2019
- *      Author: EmilAliyev
+ *      Authors: Emil Aliyev, Andrew Lu
  */
 
 //Standard includes
@@ -71,10 +71,7 @@ static int collision_test(Ball ball1, Ball ball2)
 //When two balls collide
 static void on_collide(Ball *ball1, Ball *ball2)
 {
-    //m1v1 = m2v2
-    //v1 = v2
-
-
+	//When two balls collide, each ball pushes the other in the direction it was moving
 
     //Swap velocities and negate them
     int xvelb1 = ball1->xvel;
@@ -138,7 +135,7 @@ static void player_velocity_calc(Ball *ball)
 //Called on ball continuously
 static void player_ball_loop(Ball *ball)
 {
-    //Clear the ball
+    //Clear the ball from the display
     clearBall(*ball);
 
     //Change ball's position according to the velocity
@@ -152,6 +149,8 @@ static void player_ball_loop(Ball *ball)
 //Called on enemy ball continuously
 static void enemy_ball_loop(Ball *ball, Ball *enemyball)
 {
+	
+	//Clear ball from display
     clearBall(*enemyball);
 
     //Move enemy ball

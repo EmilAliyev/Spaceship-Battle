@@ -2,7 +2,7 @@
  * acceleration.c
  *
  *  Created on: Mar 11, 2019
- *      Author: EmilAliyev
+ *      Authors: Emil Aliyev, Andrew Lu
  */
 
 //Header include
@@ -25,7 +25,7 @@ int getXAcceleration()
     //To hold the acceleration bits
     unsigned char accelerationx[1];
 
-    //Get the acceleration bits for x and y
+    //Get the acceleration bits for x and y from accelerometer
     I2C_IF_ReadFrom(ACCELEROMETER_DEVICE_ADDRESS, &xregoffset, 1, &accelerationx[0], 1);
 
     signed char signedaccx = (signed char) accelerationx[0];
@@ -39,7 +39,7 @@ int getYAcceleration()
     //To hold the acceleration bits
     unsigned char accelerationy[1];
 
-    //Get the acceleration bits for x and y
+    //Get the acceleration bits for x and y from accelerometer
     I2C_IF_ReadFrom(ACCELEROMETER_DEVICE_ADDRESS, &yregoffset, 1, &accelerationy[0], 1);
 
     signed char signedaccy = (signed char) accelerationy[0];

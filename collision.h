@@ -2,7 +2,7 @@
  * collision.h
  *
  *  Created on: Mar 11, 2019
- *      Author: EmilAliyev
+ *      Author: Emil Aliyev, Andrew Lu
  */
 
 #ifndef COLLISION_H_

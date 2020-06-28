@@ -2,7 +2,7 @@
  * ball.h
  *
  *  Created on: Mar 9, 2019
- *      Author: EmilAliyev
+ *      Author: Emil Aliyev, Andrew Lu
  */
 
 #ifndef BALL_H_

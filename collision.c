@@ -2,7 +2,7 @@
  * collision.c
  *
  *  Created on: Mar 11, 2019
- *      Author: EmilAliyev
+ *      Author: Emil Aliyev, Andrew Lu
  */
 
 

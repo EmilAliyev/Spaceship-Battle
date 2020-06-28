@@ -2,7 +2,7 @@
  * game.h
  *
  *  Created on: Mar 9, 2019
- *      Author: EmilAliyev
+ *      Authors: Emil Aliyev, Andrew Lu
  */
 
 #ifndef GAME_H_

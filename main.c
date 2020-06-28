@@ -33,30 +33,6 @@
 //
 //*****************************************************************************
 
-
-//*****************************************************************************
-//
-// Application Name     -   SSL Demo
-// Application Overview -   This is a sample application demonstrating the
-//                          use of secure sockets on a CC3200 device.The
-//                          application connects to an AP and
-//                          tries to establish a secure connection to the
-//                          Google server.
-// Application Details  -
-// docs\examples\CC32xx_SSL_Demo_Application.pdf
-// or
-// http://processors.wiki.ti.com/index.php/CC32xx_SSL_Demo_Application
-//
-//*****************************************************************************
-
-
-//*****************************************************************************
-//
-//! \addtogroup ssl
-//! @{
-//
-//*****************************************************************************
-
 // Standard includes
 #include <stdio.h>
 #include <string.h>
@@ -99,10 +75,6 @@
 
 //SPI
 #define SPI_IF_BIT_RATE  100000
-
-//****************************************************************************
-//                      IR MESSAGING MACROS END
-//****************************************************************************
 
 //*****************************************************************************
 //                 GLOBAL VARIABLES -- Start
@@ -173,16 +145,6 @@ void startSetup()
     // I2C Init
     //
     I2C_IF_Open(I2C_MASTER_MODE_FST);
-
-    //
-    // Muxing UART and SPI lines.
-    //
-
-
-    //
-    // Enable the SPI module clock
-    //
-
 
     //Initialize adafruit
     Adafruit_Init();

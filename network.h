@@ -2,7 +2,7 @@
  * network.h
  *
  *  Created on: Mar 10, 2019
- *      Author: EmilAliyev
+ *      Authors: Emil Aliyev, Andrew Lu
  */
 
 #ifndef NETWORK_H_

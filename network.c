@@ -2,7 +2,7 @@
  * network.c
  *
  *  Created on: Mar 10, 2019
- *      Author: EmilAliyev
+ *      Authors: Emil Aliyev, Andrew Lu
  */
 
 //Header include
@@ -771,7 +771,7 @@ int connectToAccessPoint() {
     return 0;
 }
 
-
+//Send http post request with given message
 int http_post(int iTLSSockID, char *message){
     char acSendBuff[512];
     char acRecvbuff[1460];
@@ -842,6 +842,7 @@ int http_post(int iTLSSockID, char *message){
     return 0;
 }
 
+//Send http get request
 int http_get(int iTLSSockID){
     char acSendBuff[512];
     char acRecvbuff[1460];
@@ -928,6 +929,8 @@ void sendMessage(char *message)
     msgtosend[len+2] = '\0';
 
     printf("%s\n\r", message);
+	
+	//Post message to cloud. Cloud service will send it as sms.
     http_post(iretval, msgtosend);
     free(msgtosend);
 }

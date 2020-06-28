@@ -2,7 +2,7 @@
 #define _ADAFRUIT_GFX_H
 
 #define WIDTH 128
-#define HEIGHT 128  // SET THIS TO 96 FOR 1.27"!
+#define HEIGHT 128 
 
 /*
 #if ARDUINO >= 100
